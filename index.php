@@ -1,6 +1,6 @@
 <?php
 $page = isset($_GET["page"]) ? $_GET["page"] : "homepage";
-$allowed_pages = ["homepage", "blog", "contact"];
+$allowed_pages = ["homepage", "blog", "contact", "post1", "post2", "post3", "post4", "post5"];
 if(!in_array($page, $allowed_pages)) {
     $page = "homepage";
 }
