@@ -38,8 +38,38 @@ class Db {
     }
 
     #$_POST (vormi andmed) / $_GET (URL andmed) väärtuse tagastamine
-    function() {
-        
+    # ?string saab olla post, get ja null
+    function getVar(string $name, ?string $method = null) {
+        if($method === 'post') {
+            return $_POST[$name] ?? null;
+        } elseif($method === 'get') {
+            return $_GET[$name] ?? null;
+        } else {
+            return $_POST[$name] ?? $_GET[$name] ?? null;
+        }
+    }
+
+    #Sisendi turvalisemaks muutmine
+    function dbFix($var) {
+        if(!$this->con || !($this->con instanceof mysqli)) { // || või/or
+            return 'NULL';
+        }
+        if(is_null($var)) {
+            return 'NULL';
+        } elseif(is_bool($var)) {
+            return $var ? '1' : '0'; // ? kui on tõene ja : kui on väär
+        } elseif(is_numeric($var)) {
+            return $var;
+        } else {
+            return $this->con->real_escape_string($var);
+        }
+    }
+
+    #Inimlikul kujul massiivi sisu vaatamine
+    function show($array) {
+        echo "<pre>";
+        print_r($array);
+        echo "</pre>";
     }
 
 } // class Db lõpp
