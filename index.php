@@ -1,4 +1,8 @@
 <?php
+include("include/settings.php"); //Lae seaded
+include("include/mysqli.php"); //Lae andmebaasi klass
+$db = new Db(); // Loo andmebaasi objekt
+
 $page = isset($_GET["page"]) ? $_GET["page"] : "homepage";
 $allowed_pages = ["homepage", "blog", "contact", "post1", "post2", "post3", "post4", "post5"];
 if(!in_array($page, $allowed_pages)) {
@@ -20,7 +24,7 @@ if(!in_array($page, $allowed_pages)) {
     </div>
 
     <div class="container">
-        <?php include("$page.html"); ?>
+        <?php include("$page.php"); ?>
     </div>
 
 
