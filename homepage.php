@@ -20,8 +20,7 @@
             src="img/thinking_man.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Thinking man"
-          />
+            alt="Thinking man" />
         </div>
         <div class="col-md">
           <div class="card-body">
@@ -44,9 +43,7 @@
               must-valged. Sageli seisame silmitsi olukordadega, kus meil tuleb
               valida “nii” või “teisiti”...
             </p>
-            <a href="?page=post5" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post5" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -61,8 +58,7 @@
             src="img/head_blow.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Head blow"
-          />
+            alt="Head blow" />
         </div>
         <div class="col-md">
           <div class="card-body">
@@ -85,9 +81,7 @@
               teadlikke otsuseid igapäevaelus, alates tööalastest valikutest
               kuni isiklike eesmärkide täitmiseni...
             </p>
-            <a href="?page=post4" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post4" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -102,8 +96,7 @@
             src="img/vikings_can.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Viking can"
-          />
+            alt="Viking can" />
         </div>
         <div class="col-md-7">
           <div class="card-body">
@@ -127,9 +120,7 @@
               räägime ka motivatsioonist ja eneseuskumisest, mis aitavad meil
               liikuda edasi, isegi kui tee ei paista alguses selge...
             </p>
-            <a href="?page=post3" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post3" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>

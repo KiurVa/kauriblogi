@@ -8,42 +8,33 @@
     <div class="col-md-6">
       <form>
         <div class="mb-3">
-          <label for="name" class="form-label"
-            >Nimi <span class="text-danger">*</span></label
-          >
+          <label for="name" class="form-label">Nimi <span class="text-danger">*</span></label>
           <input
             type="text"
             class="form-control"
             id="name"
             required
-            placeholder="Sisesta oma nimi või hüüdnimi"
-          />
+            placeholder="Sisesta oma nimi või hüüdnimi" />
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label"
-            >E-post <span class="text-danger">*</span></label
-          >
+          <label for="email" class="form-label">E-post <span class="text-danger">*</span></label>
           <input
             type="email"
             class="form-control"
             id="email"
             required
-            placeholder="Sisesta oma e-posti aadress"
-          />
+            placeholder="Sisesta oma e-posti aadress" />
         </div>
 
         <div class="mb-3">
-          <label for="message" class="form-label"
-            >Sõnum <span class="text-danger">*</span></label
-          >
+          <label for="message" class="form-label">Sõnum <span class="text-danger">*</span></label>
           <textarea
             class="form-control"
             id="message"
             rows="5"
             required
-            placeholder="Kirjuta oma küsimus või tagasiside"
-          ></textarea>
+            placeholder="Kirjuta oma küsimus või tagasiside"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Saada</button>
@@ -62,14 +53,10 @@
           <a href="https://facebook.com/kauriblogi" target="_blank">Facebook</a>
         </li>
         <li>
-          <a href="https://instagram.com/kauriblogi" target="_blank"
-            >Instagram</a
-          >
+          <a href="https://instagram.com/kauriblogi" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/kauriblogi" target="_blank"
-            >LinkedIn</a
-          >
+          <a href="https://linkedin.com/in/kauriblogi" target="_blank">LinkedIn</a>
         </li>
       </ul>
     </div>

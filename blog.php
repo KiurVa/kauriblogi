@@ -11,8 +11,7 @@
             src="img/thinking_man.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Thinking man"
-          />
+            alt="Thinking man" />
         </div>
         <div class="col-md">
           <div class="card-body">
@@ -35,9 +34,7 @@
               must-valged. Sageli seisame silmitsi olukordadega, kus meil tuleb
               valida “nii” või “teisiti”...
             </p>
-            <a href="?page=post5" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post5" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -52,8 +49,7 @@
             src="img/head_blow.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Head blow"
-          />
+            alt="Head blow" />
         </div>
         <div class="col-md">
           <div class="card-body">
@@ -76,9 +72,7 @@
               teadlikke otsuseid igapäevaelus, alates tööalastest valikutest
               kuni isiklike eesmärkide täitmiseni...
             </p>
-            <a href="?page=post4" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post4" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -93,8 +87,7 @@
             src="img/vikings_can.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Viking can"
-          />
+            alt="Viking can" />
         </div>
         <div class="col-md-7">
           <div class="card-body">
@@ -118,9 +111,7 @@
               räägime ka motivatsioonist ja eneseuskumisest, mis aitavad meil
               liikuda edasi, isegi kui tee ei paista alguses selge...
             </p>
-            <a href="?page=post3" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post3" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -135,8 +126,7 @@
             src="img/sword_men.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Sword men"
-          />
+            alt="Sword men" />
         </div>
         <div class="col-md-7">
           <div class="card-body">
@@ -159,9 +149,7 @@
               meid lähemale meie soovitud sihtpunktile. Mida rohkem me
               tegutseme, seda selgemaks muutub tee ja eesmärk...
             </p>
-            <a href="?page=post2" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post2" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>
@@ -176,8 +164,7 @@
             src="img/fist_up.jpg"
             class="img-thumbnail"
             width="650"
-            alt="Fist up"
-          />
+            alt="Fist up" />
         </div>
         <div class="col-md-7">
           <div class="card-body">
@@ -201,9 +188,7 @@
               pingutus ja iga õppetund on aidanud meil kasvada ning millised
               takistused on meid õpetanud olema tugevamad ja kindlamad oma teel.
             </p>
-            <a href="?page=post1" class="btn btn-outline-success"
-              >Tahan edasi lugeda</a
-            >
+            <a href="?page=post1" class="btn btn-outline-success">Tahan edasi lugeda</a>
           </div>
         </div>
       </div>

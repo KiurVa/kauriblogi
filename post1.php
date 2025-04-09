@@ -23,8 +23,7 @@
           src="img/fist_up.jpg"
           class="img-thumbnail"
           width="650"
-          alt="Fist up"
-        />
+          alt="Fist up" />
       </div>
 
       <div>
@@ -106,9 +105,7 @@
       </div>
 
       <div class="m-4 d-flex justify-content-end">
-        <a href="?page=post2" class="btn btn-outline-primary"
-          >Järgmine postitus &raquo;</a
-        >
+        <a href="?page=post2" class="btn btn-outline-primary">Järgmine postitus &raquo;</a>
       </div>
     </div>
   </div>
