@@ -10,4 +10,36 @@ class Db {
             mysqli_set_charset($this->con, "utf8");
         }
     } 
-}
+
+    # UPDATE, INSERT VÕI DELETE
+    function dbQuery($sql) {
+        if($this->con) {
+            $res = mysqli_query($this->con, $sql);
+            if($res === false) {
+                echo "<div>Vigane päring: " .htmlspecialchars($sql). "</div>";
+                return false;
+            }
+            return $res; // Tagastab objekti
+        }
+        return false;
+    }
+
+    # SELECT sql lause jaoks
+    function dbGetArray($sql) {
+        $res = $this->dbQuery($sql);
+        if($res !== false) {
+            $data = array(); // Tühja massiivi loomine
+            while($row = mysqli_fetch_assoc($res)) {
+                $data[] = $row; //Lisa uude massiivi
+            }
+            return (!empty($data)) ? $data : false; //Kui data pole tühi tagasta data
+        }
+        return false;
+    }
+
+    #$_POST (vormi andmed) / $_GET (URL andmed) väärtuse tagastamine
+    function() {
+        
+    }
+
+} // class Db lõpp
