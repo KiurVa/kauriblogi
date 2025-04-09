@@ -4,7 +4,7 @@ include("include/mysqli.php"); //Lae andmebaasi klass
 $db = new Db(); // Loo andmebaasi objekt
 
 $page = isset($_GET["page"]) ? $_GET["page"] : "homepage";
-$allowed_pages = ["homepage", "blog", "contact", "post1", "post2", "post3", "post4", "post5", "post_add"];
+$allowed_pages = ["homepage", "blog", "contact", "post", "post_add"];
 if (!in_array($page, $allowed_pages)) {
   $page = "homepage";
 }
