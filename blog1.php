@@ -1,24 +1,32 @@
 <?php
 $sql = "SELECT *, DATE_FORMAT(added, '%d.%m.%Y %H:%i:%s') as estonia FROM blog ORDER BY added DESC";
 $data = $db->dbGetArray($sql);
+$db->show($data);
 if ($data !== false) {
   $counter = 0; //Veeru lugeja 1, 2
   foreach ($data as $post) {
-    if ($counter % 2 === 0) {
 ?>
-      <div class="row mt-1">
-      <?php
-    } //$counter % 2 == 0
-      ?>
-      <div class="col-md-6">
-        <div class="card mb-1">
+      <div class="row mt-5">
+    <div class="card shadow-sm">
+      <div class="row g-0">
+        <div class="col-md-5">
+          <img
+            src="<?= $post['photo'] ?>"
+            class="img-thumbnail"
+            width="650"
+            alt="Pilt"
+          />
+        </div>
+        <div class="col-md">
           <div class="card-body">
-            <h4 class="card-title"><?= $post['heading'] ?><span class="fs-6"> <?= $post['estonia'] ?></span>
-            </h4>
-            <img src="<?= $post['photo'] ?>" class="img-fluid" alt="Pilt" />
-
+            <h5 class="card-title fs-3 fw-bold">
+            card-title"><?= $post['heading'] ?>
+            </h5>
             <p class="card-text">
-              <?= $post['preamble'] ?>
+              <small class="text-muted fw-bold"><?= $post['estonia'] ?></small>
+            </p>
+            <p class="card-text">
+            <?= $post['preamble'] ?>
             </p>
             <div class="mt-4">
               <strong>Märksõnad:</strong>
@@ -35,20 +43,18 @@ if ($data !== false) {
                                   //$db->show($links); //TEST
                                   ?></span>
             </div>
-            <div class="text-end">
-              <a href="?page=post&sid=<?= $post['id']; ?>" class="btn btn-primary">Loe edasi</a>
-            </div>
+            <a href="?page=post&sid=<?= $post['id']; ?>" class="btn btn-outline-success"
+              >Tahan edasi lugeda</a
+            >
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+
   <?php
     $counter++; //Liidab ühe juurde
-    if ($counter % 2 === 0) {
-      echo "</div>"; // rea lõpp
-    }
-  } //foreach
-  if ($counter % 2 === 0) {
-    echo "</div>"; // rea lõpp, kui viimasel real on postitusi
   }
 } //$data !== false
   ?>

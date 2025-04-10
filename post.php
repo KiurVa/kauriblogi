@@ -7,6 +7,13 @@ if (isset($_GET['sid']) && is_numeric($_GET['sid'])) {
   if ($data !== false) {
     $val = $data[0];
 
+    //Küsib eelmise ja järgmise id numbrit
+    $sql_prev = "SELECT id FROM blog WHERE added < '" . $val['added'] . "' ORDER BY added DESC LIMIT 1";
+    $prev = $db->dbGetArray($sql_prev);
+    $sql_next = "SELECT id FROM blog WHERE added > '" . $val['added'] . "' ORDER BY added ASC LIMIT 1";
+    $next = $db->dbGetArray($sql_next);
+
+
 
     //$db->show($val);
 
@@ -45,29 +52,44 @@ if (isset($_GET['sid']) && is_numeric($_GET['sid'])) {
             src="<?= $val['photo']; ?>"
             class="img-thumbnail"
             width="650"
-            alt="Fist up" />
+            alt="Pilt" />
         </div>
 
         <div>
           <?= $val['context']; ?>
         </div>
 
-        <div class="m-4 d-flex justify-content-end">
-          <a href="?page=post2" class="btn btn-outline-primary">Järgmine postitus &raquo;</a>
+
+        <div class="m-4 d-flex justify-content-between">
+          <!-- Kontrollib kas nuppe vaja on vaja teha ja teeb vajadusel -->
+          <?php
+          if ($prev !== false) {
+          ?><a href="?page=post&sid=<?= $prev[0]['id'] ?>" class="btn btn-outline-primary">&laquo; Vanem postitus </a>
+          <?php
+          }
+          ?>
+          <?php
+          if ($next !== false) {
+          ?>
+            <a href="?page=post&sid=<?= $next[0]['id'] ?>" class="btn btn-outline-primary"> Uuem postitus &raquo;</a>
+          <?php
+          }
+
+          ?>
         </div>
+
       </div>
-    </div>
-  <?php
+    <?php
   } else {
-  ?>
-    <h4>Viga</h4>
-    <p>Sellist postitust ei ole.!</p>
-  <?php
+    ?>
+      <h4>Viga</h4>
+      <p>Sellist postitust ei ole.!</p>
+    <?php
   }
 } else {
-  ?>
-  <h4>Viga</h4>
-  <p>URL on vigane!</p>
-<?php
+    ?>
+    <h4>Viga</h4>
+    <p>URL on vigane!</p>
+  <?php
 }
-?>
+  ?>
